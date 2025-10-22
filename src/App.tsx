@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="app">
-        {/* Thanh điều hướng */}
+        {}
         <nav className="navbar">
           <ul className="nav-list">
             <li><Link to="/" className="nav-item">Trang chủ</Link></li>
@@ -19,7 +19,7 @@ const App: React.FC = () => {
           </ul>
         </nav>
 
-        {/* Nội dung */}
+        {}
         <div className="container">
           <Routes>
             <Route path="/" element={<Weather />} />
