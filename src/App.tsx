@@ -8,29 +8,21 @@ import "./App.css";
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="app">
-        {}
-        <nav className="navbar">
-          <ul className="nav-list">
-            <li><Link to="/" className="nav-item">Trang chủ</Link></li>
-            <li><Link to="/weather" className="nav-item">Bài 1</Link></li>
-            <li><Link to="/students" className="nav-item">Bài 2</Link></li>
-            <li><Link to="/news" className="nav-item">Bài 3</Link></li>
-          </ul>
-        </nav>
+      <nav className="navbar">
+        <Link to="/weather">Weather</Link> |{" "}
+        <Link to="/students">Students</Link> |{" "}
+        <Link to="/news">News</Link>
+      </nav>
 
-        {}
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Weather />} />
-            <Route path="/weather" element={<Weather />} />
-            <Route path="/students" element={<Students />} />
-            <Route path="/news" element={<News />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/weather" element={<Weather />} />
+        <Route path="/students/*" element={<Students />} />
+        <Route path="/news" element={<News />} />
+      </Routes>
     </Router>
   );
 };
 
 export default App;
+
+

@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -5,26 +6,23 @@ body {
 }
 
 .navbar {
-  background-color: #007bff;
-  padding: 10px 20px;
+  background-color: #435cd6;
+  padding: 12px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
+.navbar a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
+  margin: 0 15px;
   font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-.nav-item:hover {
-  text-decoration: underline;
+.navbar a:hover {
+  color: #ccefe8;
 }
 
 .container {
@@ -32,6 +30,91 @@ body {
   margin: 40px auto;
   background: white;
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.student-container h2 {
+  color: #435cd6;
+  margin-bottom: 20px;
+}
+
+.student-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.student-container th,
+.student-container td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.student-container th {
+  background-color: #435cd6;
+  color: white;
+}
+
+.student-container a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.student-container a:hover {
+  text-decoration: underline;
+}
+
+.student-detail {
+  background: white;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.student-detail h2 {
+  color: #435cd6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.student-detail p {
+  font-size: 16px;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #435cd6;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #1b9c83;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
