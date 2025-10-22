@@ -4,7 +4,6 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Navbar */
 .navbar {
   background-color: #007bff;
   padding: 10px 20px;
@@ -28,7 +27,6 @@ body {
   text-decoration: underline;
 }
 
-/* Nội dung chính */
 .container {
   max-width: 900px;
   margin: 40px auto;
